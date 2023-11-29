@@ -1,6 +1,8 @@
 h1{
     color: darkblue;
-    font: message-box;
+
 }
-.paragrafo{color: blueviolet;}
+.paragrafo{color: blueviolet;
+font: small-caps;
+}
 
