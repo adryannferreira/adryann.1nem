@@ -1,6 +1,6 @@
 h1{
     color: darkblue;
-    font-stretch: extra-condensed;
+    font: message-box;
 }
 .paragrafo{color: blueviolet;}
 
