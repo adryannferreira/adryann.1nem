@@ -6,3 +6,7 @@ font: small-caps;
 }
 
 p{ font: smaller;}
+
+h2{
+    text-align: center;
+}
