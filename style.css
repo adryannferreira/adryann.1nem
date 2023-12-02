@@ -19,5 +19,13 @@ h2{
     color: aliceblue;
     background: darkorange;
     border:1px solid #555;
-    
-    ;}
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+transition: 1s background;}
+
+ .a:hover{
+    background: rgb(255, 163, 50);
+
+ }
