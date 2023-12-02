@@ -12,3 +12,7 @@ h2{
     color: rgb(7, 0, 100);
     font-size: 200%
 }
+
+body {
+    background-color: black;
+}
