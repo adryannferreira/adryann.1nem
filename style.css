@@ -6,7 +6,7 @@ font: small-caps;
 }
 
 p{ font: smaller;
-color: aliceblue;}
+;}
 
 h2{
     text-align: center;
@@ -14,6 +14,4 @@ h2{
     font-size: 200%
 }
 
-body {
-    background-color: rgb(7, 0, 100);
-}
+
