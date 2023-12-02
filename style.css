@@ -5,7 +5,8 @@ h1{color: darkgreen;
 font: small-caps;
 }
 
-p{ font: smaller;}
+p{ font: smaller;
+color: aliceblue;}
 
 h2{
     text-align: center;
