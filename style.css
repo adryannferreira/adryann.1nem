@@ -14,4 +14,7 @@ h2{
     font-size: 200%
 }
 
-
+#dov{
+    display: flex;
+    justify-content: center;
+}
