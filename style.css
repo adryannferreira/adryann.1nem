@@ -19,5 +19,10 @@ h2{
     justify-content: center;
 }
 
-#botao{text-align: center;
-    color: rgb(7, 0, 100);}
+#botao{ text-decoration: none;
+color: darkorange;
+}
+
+a:hover{
+    color: rgb(255, 190, 110);
+}
