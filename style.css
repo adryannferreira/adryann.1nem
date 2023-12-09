@@ -9,16 +9,9 @@ p{ font: smaller;
     font-size: 100%
 ;}
 
-h2{
-    text-align: center;
-    color: rgb(7, 0, 100);
-    font-size: 200%
-}
 
-#dov{
-    display: flex;
-    justify-content: center;
-}
+
+
 
 a{padding: 10px 8px;
     width: 50px;
