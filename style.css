@@ -30,8 +30,6 @@ a{padding: 10px 8px;
     user-select: none;
     cursor: pointer;
     text-decoration: none;
-    justify-content: center;
-
 }
 
 a:hover{
