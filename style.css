@@ -19,9 +19,10 @@ h2{
     justify-content: center;
 }
 
-a{ text-decoration: none;
+a{text-align: center; 
+    text-decoration: none;
 color: darkorange;
-text-align: center;
+
 }
 
 a:hover{
