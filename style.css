@@ -35,3 +35,12 @@ a{padding: 10px 8px;
 a:hover{
     color: rgb(255, 190, 110);
 }
+
+#cabecalho{ 
+    background: darkorange;
+    color: #fff;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-size: 400%;
+}
