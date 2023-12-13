@@ -32,7 +32,7 @@ a:hover{
 #cabecalho{ 
     background: darkorange;
     color: #fff;
-    border: 0;
+    border: none;
     text-align: center;
     font-size: 400%;
 }
