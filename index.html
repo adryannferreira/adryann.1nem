@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            background-color: #f0f0f0;
             color: #333;
             margin: 0;
             padding: 0;
@@ -18,52 +18,31 @@
             background-color: #007bff;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         header {
             font-size: 36px;
             margin: 0;
         }
-        nav {
-            margin: 0;
-            padding: 10px;
-            background-color: #0056b3;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
         .artigo {
             margin-bottom: 30px;
         }
         .artigo h2 {
+            color: #007bff;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 10px;
             border-bottom: 2px solid #007bff;
             padding-bottom: 5px;
-            font-size: 24px;
-            margin-top: 0;
         }
         .artigo p {
             font-size: 18px;
@@ -71,12 +50,14 @@
             margin-bottom: 20px;
         }
         footer {
-            font-size: 16px;
-            font-style: italic;
-            text-align: center;
-            padding: 10px;
-            background-color: #343a40;
+            font-size: 14px;
             color: #fff;
+            text-align: center;
+            padding: 15px;
+            background-color: #343a40;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
         }
         a {
             color: #007bff;
@@ -92,16 +73,6 @@
     <div id="cabecalho">
         <header>DUMONT NEWS</header>
     </div>
-
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Últimas Notícias</a></li>
-            <li><a href="#">Artigos</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
         <div class="artigo">
@@ -137,7 +108,6 @@
 
     <footer>
         <p>Coluna Adryann Cruzarolli - Dumont News</p>
-        <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
     </footer>
 
 </body>
