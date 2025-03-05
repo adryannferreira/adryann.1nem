@@ -7,101 +7,128 @@
     <link rel="shortcut icon" href="logo_2.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilos gerais */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        /* Resetando estilos */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             line-height: 1.6;
+            padding: 0;
         }
 
         /* Cabeçalho */
         #cabecalho {
-            background-color: #0056b3;
-            color: #fff;
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
             text-align: center;
-            padding: 30px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 50px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         header {
-            font-size: 40px;
-            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         /* Barra de navegação */
         nav {
-            text-align: center;
-            background-color: #007bff;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
             padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: #fff;
             text-decoration: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            margin: 0 10px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+            color: #2575fc;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
         }
 
         nav a:hover {
-            background-color: #0056b3;
+            background-color: #2575fc;
+            color: white;
+            transform: scale(1.05);
         }
 
-        /* Container principal */
+        /* Container de conteúdo */
         .container {
-            max-width: 1100px;
-            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
         }
 
-        /* Estilos dos artigos */
+        /* Estilo dos artigos */
         .artigo {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 30px;
         }
 
         .artigo h2 {
-            color: #0056b3;
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
+            color: #2575fc;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: capitalize;
         }
 
         .artigo p {
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo do botão de redirecionamento */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .button-container a {
+            background-color: #2575fc;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-container a:hover {
+            background-color: #6a11cb;
+            transform: scale(1.05);
         }
 
         /* Rodapé */
         footer {
-            font-size: 14px;
-            color: #fff;
+            background-color: #212121;
+            color: white;
             text-align: center;
-            padding: 15px;
-            background-color: #343a40;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Links */
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -112,9 +139,9 @@
         <header>DUMONT NEWS</header>
     </div>
 
-    <!-- Barra de Navegação -->
+    <!-- Barra de navegação -->
     <nav>
-        <a href="pagina.html">Ir para Página</a> <!-- Link para redirecionar -->
+        <a href="pagina.html">Ir para Página</a>
     </nav>
 
     <!-- Container principal -->
@@ -123,30 +150,35 @@
         <div class="artigo">
             <h2>Adiós</h2>
             <p><strong>15 de Fevereiro</strong></p>
-            <p>"E a vida vai ser boa e linda, mas não sem um coração partido", a definição para o adeus ao Santos Dumont. Saudades Lilian, professora incrível que me ajudou demais na criação desse site, que super abraçou a minha ideia de criar um jornal para a escola...</p>
+            <p>"E a vida vai ser boa e linda, mas não sem um coração partido", a definição para o adeus ao Santos Dumont...</p>
         </div>
 
         <div class="artigo">
             <h2>Até 2024</h2>
             <p><strong>15 de Dezembro 2023</strong></p>
-            <p>Sexta-Feira chegou, a pequena despedida aconteceu. O que podemos dizer sobre? Teve vários salgados, refrigerantes e bolo, se não fosse a professora Lilian nada teria acontecido...</p>
+            <p>Sexta-Feira chegou, a pequena despedida aconteceu. O que podemos dizer sobre?... </p>
         </div>
 
         <div class="artigo">
             <h2>Despedida</h2>
             <p><strong>13 de Dezembro 2023</strong></p>
-            <p>As aulas estão prestes a acabar, mas não poderia deixar passar batido, a professora Lilian Alexandre junto com os alunos do 9° e 1° ano irão fazer uma pequena despedida...</p>
+            <p>As aulas estão prestes a acabar, mas não poderia deixar passar batido, a professora Lilian...</p>
         </div>
 
         <div class="artigo">
             <h2>Se Liga!</h2>
             <p><strong>09 de Dezembro 2023</strong></p>
-            <p>O ano se passou muito rápido, faltando apenas alguns dias para acabar as aulas, começa uma nova etapa, o famoso "Se Liga", conhecido popularmente pelos professores como o levanta defunto...</p>
+            <p>O ano se passou muito rápido, faltando apenas alguns dias para acabar as aulas...</p>
         </div>
 
         <div class="artigo">
             <h2>Se Liga, O que é?</h2>
-            <p>O Se Liga! é uma ação de intensificação de aprendizagem voltada para a recuperação da aprendizagem...</p>
+            <p>O Se Liga! é uma ação de intensificação de aprendizagem voltada para a recuperação...</p>
+        </div>
+
+        <!-- Botão para redirecionar -->
+        <div class="button-container">
+            <a href="pagina.html">Acessar Página Completa</a>
         </div>
 
     </div>
