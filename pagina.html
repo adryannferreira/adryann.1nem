@@ -76,6 +76,50 @@
             font-size: 1.4rem;
         }
 
+        /* Caixa de texto */
+        .input-box {
+            background-color: #1d1d1d;
+            border: 2px solid #28a745;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            color: #fff;
+            width: 100%;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .input-box:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+        .input-box::placeholder {
+            color: #888;
+        }
+
+        /* Botão de enviar */
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #28a745;
+        }
+
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
+
         /* Lista */
         section.a ul {
             list-style-type: circle;
@@ -110,7 +154,6 @@
             transform: scale(1.05);
         }
 
-        /* Adicionando sombreamento e animação nas transições */
         a:active {
             transform: scale(0.98);
         }
@@ -169,6 +212,18 @@
                 <li>Brancos: 3</li>
             </ul>
         </section>
+
+        <!-- Caixa de texto para comentário -->
+        <input type="text" class="input-box" placeholder="Deixe seu comentário...">
+
+        <!-- Caixa de texto para nome -->
+        <input type="text" class="input-box" placeholder="Digite seu nome...">
+
+        <!-- Caixa de texto para e-mail -->
+        <input type="email" class="input-box" placeholder="Digite seu e-mail...">
+
+        <!-- Botão de envio -->
+        <button class="submit-btn">Enviar</button>
 
         <!-- Link de Voltar -->
         <a href="index.html">VOLTAR</a>
