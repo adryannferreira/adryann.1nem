@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coluna Cruzarolli - Dumont News</title>
     <link rel="shortcut icon" href="logo_2.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* Resetando estilos */
         * {
@@ -15,109 +15,141 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(90deg, rgba(10, 25, 47, 0.9), rgba(0, 0, 0, 0.7));
+            color: #fff;
+            line-height: 1.8;
             padding: 0;
         }
 
         /* Cabeçalho */
         #cabecalho {
-            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(45deg, #f06, #4e00ff);
             color: white;
             text-align: center;
-            padding: 50px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 80px 0;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+            position: relative;
         }
 
         header {
-            font-size: 3rem;
-            font-weight: bold;
-            letter-spacing: 2px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            letter-spacing: 5px;
             text-transform: uppercase;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
         }
 
         /* Barra de navegação */
         nav {
-            background-color: #ffffff;
+            background: rgba(0, 0, 0, 0.7);
             display: flex;
             justify-content: center;
-            padding: 10px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
         }
 
         nav a {
             text-decoration: none;
-            color: #2575fc;
+            color: #4e00ff;
             font-size: 1.2rem;
             margin: 0 20px;
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: all 0.3s ease-in-out;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #4e00ff;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover::before {
+            opacity: 0.6;
         }
 
         nav a:hover {
-            background-color: #2575fc;
-            color: white;
-            transform: scale(1.05);
+            color: #fff;
+            transform: scale(1.1);
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
         }
 
-        /* Container de conteúdo */
+        /* Container principal */
         .container {
             width: 90%;
             max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
         }
 
-        /* Estilo dos artigos */
         .artigo {
             margin-bottom: 40px;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 30px;
+            border-bottom: 2px solid #4e00ff;
+            padding-bottom: 20px;
         }
 
         .artigo h2 {
-            color: #2575fc;
+            font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-            text-transform: capitalize;
+            margin-bottom: 20px;
+            color: #4e00ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .artigo h2::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #4e00ff;
+            bottom: -10px;
+            left: 0;
         }
 
         .artigo p {
             font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
+            color: #ccc;
             margin-bottom: 15px;
+            line-height: 1.8;
         }
 
-        /* Estilo do botão de redirecionamento */
+        /* Botão de redirecionamento */
         .button-container {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 60px;
         }
 
         .button-container a {
-            background-color: #2575fc;
+            background-color: #4e00ff;
             color: white;
             padding: 15px 30px;
             font-size: 1.2rem;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
         .button-container a:hover {
-            background-color: #6a11cb;
-            transform: scale(1.05);
+            background-color: #f06;
+            transform: scale(1.1);
         }
 
         /* Rodapé */
@@ -128,7 +160,7 @@
             padding: 20px;
             margin-top: 40px;
             font-size: 0.9rem;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
